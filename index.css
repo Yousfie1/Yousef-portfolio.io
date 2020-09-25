@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,80);
+
+body,html{
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(205,43,212,1) 100%);
+}
+
+.title{
+    color: white;
+}
+
+.heroimg {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ToButton{
+    color: white;
+}
+
+.ToButton:hover{
+    color: black;
+}
+
+.OverMij{
+    height: fit-content;
+    background-color: white;
+}
+
+.OverMijTitle{
+    text-align: center;
+    font-size: 35px;
+}
+
+.OverMijText{
+    text-align: center;
+}
+
+.WerkTitle{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.WerkFoto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    width: 15%;
+}
+
+.Punten {
+    text-align: center;
+    display: flex;
+    display: block;
+    clear: both;
+  }
+  
+  .Goed {
+    list-style-type: none;
+    float: left;
+    color: green;
+    position: relative;
+  }
+  
+  .Slecht {
+    list-style-type: none;
+    float: left;
+    color: red;
+  }
