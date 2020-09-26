@@ -1,14 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,80);
 
+
 body,html{
     font-family: 'Montserrat', sans-serif;
+    position: relative;
     height: 100%;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(205,43,212,1) 100%);
+    background: rgb(196,96,254);
+    background: linear-gradient(0deg, rgba(196,96,254,1) 0%, rgba(205,43,212,1) 100%);
+    color: white;
 }
 
 .title{
@@ -35,6 +38,7 @@ body,html{
 
 .ToButton{
     color: white;
+    font-size: 30px;
 }
 
 .ToButton:hover{
@@ -43,7 +47,14 @@ body,html{
 
 .OverMij{
     height: fit-content;
-    background-color: white;
+    background-color: transparent;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding-top: 25px;
+    padding-bottom: 100px;
 }
 
 .OverMijTitle{
@@ -53,9 +64,11 @@ body,html{
 
 .OverMijText{
     text-align: center;
+    font-size: 25px;
 }
 
 .WerkTitle{
+    font-size: 25px;
     text-align: center;
     font-weight: bolder;
 }
@@ -64,26 +77,77 @@ body,html{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 25px;
-    width: 15%;
+    border-radius: 20%;
+    min-width: 15%;
+    margin-bottom: 50px;
 }
 
-.Punten {
-    text-align: center;
+.WerkFoto:hover{
+    transform: scale(1.05);
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+}
+.row {
     display: flex;
-    display: block;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.row:after {
+    content: "";
+    display: table;
     clear: both;
-  }
-  
-  .Goed {
-    list-style-type: none;
-    float: left;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+    width: 75%;
+    display: block;
+    margin-bottom: 20px;
+    }
+}
+
+.card {
+    text-align: center;
+}
+
+.GoedSlecht{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.goed{
     color: green;
-    position: relative;
-  }
-  
-  .Slecht {
-    list-style-type: none;
-    float: left;
-    color: red;
-  }
+    background-color: white;
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.slecht{
+    color: #ff0000;
+    background-color: white;
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 2.5px;
+    background-color: lightgray;
+    border: none;
+    width: 70%;
+}
